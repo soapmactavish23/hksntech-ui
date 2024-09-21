@@ -198,9 +198,9 @@ function onMenuModeChange() {
 
 <template>
     <div
-        class="config-panel hidden absolute top-[3.25rem] right-0 w-64 p-6 bg-surface-0 dark:bg-surface-900 border border-surface rounded-border origin-top shadow-[0px_3px_5px_rgba(0,0,0,0.02),0px_0px_2px_rgba(0,0,0,0.05),0px_1px_4px_rgba(0,0,0,0.08)]"
+        class="config-panel hidden absolute top-[3.25rem] right-0 w-64 p-12 bg-surface-0 dark:bg-surface-900 border border-surface rounded-border origin-top shadow-[0px_3px_5px_rgba(0,0,0,0.02),0px_0px_2px_rgba(0,0,0,0.05),0px_1px_4px_rgba(0,0,0,0.08)]"
     >
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-12">
             <div>
                 <span class="text-sm text-muted-color font-semibold">Primary</span>
                 <div class="pt-2 flex gap-2 flex-wrap justify-between">
@@ -225,7 +225,7 @@ function onMenuModeChange() {
                         :title="surface.name"
                         @click="updateColors('surface', surface)"
                         :class="[
-                            'border-0 w-5/12 h-5 rounded-full p-0 cursor-pointer outline-0 outline-offset-1',
+                            'border-surface-0 dark:border-surface-900 w-5/12 h-5 rounded-full p-0 cursor-pointer outline-0 outline-offset-1',
                             { 'outline-primary': layoutConfig.surface ? layoutConfig.surface === surface.name : isDarkTheme ? surface.name === 'zinc' : surface.name === 'slate' }
                         ]"
                         :style="{ backgroundColor: `${surface.palette['500']}` }"
