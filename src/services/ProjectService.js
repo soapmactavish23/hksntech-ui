@@ -29,6 +29,16 @@ export const ProjectService = {
                     'Este projeto desenvolve um app para identificar a compatibilidade de candidatos com vagas, analisando currículos em PDF. Utiliza Keycloak para autenticação, Spring Boot para API, Python com Tesseract OCR e PLN para análise, e MySQL para armazenar os resultados.',
                 githubLink: 'https://github.com/soapmactavish23/conta-coleguinhas-mobile',
                 linkedinLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7236377757763420161/'
+            },
+            {
+                id: 4,
+                img: '/assets/projects/job-timer.png',
+                plataforms: 'Android e iOS',
+                title: 'Job Timer',
+                description:
+                    'Desenvolvi um app para monitorar as horas por tarefa nos meus projetos! 📊 Utilizei Flutter, Bloc, Modular, Isar e Autenticação Google para garantir uma experiência eficiente e segura. O app registra tarefas, rastreia o tempo e gera relatórios.',
+                githubLink: 'https://github.com/soapmactavish23/job_timer',
+                linkedinLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7214088204348514304/'
             }
         ];
     }

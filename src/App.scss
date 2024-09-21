@@ -1,0 +1,42 @@
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+.img-circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    // align-items: center;
+}
+
+.img-thumbnail {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px; /* Rounded border */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

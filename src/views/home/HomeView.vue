@@ -1,15 +1,11 @@
 <template>
-    <div class="card shadow">
+    <div class="card">
         <div align="center">
             <img src="/assets/logo_fundo.png" width="250" />
         </div>
-
-        <!-- <Toolbar style="border-radius: 3rem; padding: 1rem 1rem 1rem 1.5rem">
-            <template #start>
-                <b>Projetos Desenvolvidos</b>
-            </template>
-        </Toolbar> -->
-        <div><h1>Projetos Desenvolvidos</h1></div>
+        <hr />
+        <h1>Projetos Desenvolvidos</h1>
+        <hr />
         <br />
         <div class="grid">
             <div v-for="project in projects" :key="project.id" class="col-12 md:col-3">
@@ -43,4 +39,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@import url('../../App.scss');
+</style>
