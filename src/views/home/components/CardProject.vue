@@ -1,5 +1,5 @@
 <template>
-    <Card style="width: 25rem; overflow: hidden">
+    <Card style="width: 30rem; overflow: hidden">
         <template #header>
             <img alt="user header" :src="project.img" />
         </template>
@@ -12,8 +12,8 @@
         </template>
         <template #footer>
             <div class="flex gap-4 mt-1">
-                <Button label="GitHub" severity="contrast" class="w-full" icon="pi pi-github" />
-                <Button label="LinkedIn" severity="info" class="w-full" icon="pi pi-linkedin" />
+                <Button label="GitHub" severity="contrast" class="w-full" icon="pi pi-github" @click="redirectTo(project.githubLink)" />
+                <Button label="LinkedIn" severity="info" class="w-full" icon="pi pi-linkedin" @click="redirectTo(project.linkedinLink)" />
             </div>
         </template>
     </Card>
@@ -21,7 +21,12 @@
 
 <script>
 export default {
-    props: ['project']
+    props: ['project'],
+    methods: {
+        redirectTo(link) {
+            window.location.href = link;
+        }
+    }
 };
 </script>
 
