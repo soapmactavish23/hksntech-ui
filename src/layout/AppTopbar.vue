@@ -8,11 +8,13 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
 <template>
     <div class="layout-topbar">
         <div class="layout-topbar-logo-container">
-            <router-link to="/" class="layout-topbar-logo">
+            <button class="layout-menu-button layout-topbar-action" @click="onMenuToggle">
+                <i class="pi pi-bars"></i>
+            </button>
+            <router-link to="/" class="layout-topbar-logo mr-4">
                 <img src="../../public/assets/logo.png" width="50" />
             </router-link>
         </div>
-
         <div class="layout-topbar-actions">
             <div class="layout-config-menu">
                 <button type="button" class="layout-topbar-action" @click="toggleDarkMode">
@@ -36,27 +38,6 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
             >
                 <i class="pi pi-ellipsis-v"></i>
             </button>
-
-            <div class="layout-topbar-menu hidden lg:block">
-                <div class="layout-topbar-menu-content">
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-home"></i>
-                        <span>Home</span>
-                    </button>
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-users"></i>
-                        <span>Quem Somos</span>
-                    </button>
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-inbox"></i>
-                        <span>Messages</span>
-                    </button>
-                    <button type="button" class="layout-topbar-action">
-                        <i class="pi pi-user"></i>
-                        <span>Profile</span>
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 </template>
